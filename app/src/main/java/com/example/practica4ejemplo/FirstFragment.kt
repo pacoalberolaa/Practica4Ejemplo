@@ -1,5 +1,6 @@
 package com.example.practica4ejemplo
 
+import android.app.DirectAction
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -36,12 +37,14 @@ class FirstFragment : Fragment() {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
 
-        binding.btSaludo.setOnClickListener() {
-
-            findNavController().navigate(
-                R.id.action_FirstFragment_to_saludoFragment
-            )
-
+        binding.btSaludo.setOnClickListener(){
+            // findNavController().navigate(R.id.action_FirstFragment_to_saludoFragment)
+            //buscamos el nombre
+            val nombre=binding.etNombre.text.toString()
+            //creamos la acción pasándole el valor como argumento
+            val action = FirstFragmentDirections.actionFirstFragmentToSaludoFragment(nombre)
+            //abrimos SaludoFragment
+            findNavController().navigate(action)
         }
     }
 

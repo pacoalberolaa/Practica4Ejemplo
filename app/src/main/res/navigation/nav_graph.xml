@@ -31,5 +31,10 @@
         android:id="@+id/saludoFragment"
         android:name="com.example.practica4ejemplo.SaludoFragment"
         android:label="fragment_saludo"
-        tools:layout="@layout/fragment_saludo" />
+        tools:layout="@layout/fragment_saludo" >
+        <argument
+            android:name="nombre"
+            app:argType="string"
+            android:defaultValue="Paco" />
+    </fragment>
 </navigation>
