@@ -11,6 +11,8 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="saludo">Saludo</string>
     <string name="introduce_tu_nombre">Introduce tu nombre</string>
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cambiar_nombre">Cambiar Nombre</string>
+    <string name="nuevo_nombre">Nuevo Nombre</string>
 </resources>

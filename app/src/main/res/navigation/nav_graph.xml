@@ -36,5 +36,17 @@
             android:name="nombre"
             app:argType="string"
             android:defaultValue="Paco" />
+        <action
+            android:id="@+id/action_saludoFragment_to_cambioNombreFragment"
+            app:destination="@id/cambioNombreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cambioNombreFragment"
+        android:name="com.example.practica4ejemplo.CambioNombreFragment"
+        android:label="fragment_cambio_nombre"
+        tools:layout="@layout/fragment_cambio_nombre" >
+        <action
+            android:id="@+id/action_cambioNombreFragment_to_saludoFragment"
+            app:destination="@id/saludoFragment" />
     </fragment>
 </navigation>
