@@ -10,7 +10,9 @@
         android:name="com.example.practica4ejemplo.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
-
+        <action
+            android:id="@+id/action_FirstFragment_to_saludoFragment"
+            app:destination="@id/saludoFragment" />
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
@@ -25,4 +27,9 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/saludoFragment"
+        android:name="com.example.practica4ejemplo.SaludoFragment"
+        android:label="fragment_saludo"
+        tools:layout="@layout/fragment_saludo" />
 </navigation>
